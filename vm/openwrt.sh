@@ -475,7 +475,7 @@ qm set $VMID \
   -efidisk0 ${DISK0_REF},efitype=4m,size=4M \
   -scsi0 ${DISK1_REF},size=512M \
   -boot order=scsi0 \
-  -tags proxmox-helper-scripts \
+  -tags proxmox-scripts \
   -description "
 
   # OpenWRT
