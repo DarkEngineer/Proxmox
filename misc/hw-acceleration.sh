@@ -5,7 +5,7 @@
 # License: MIT
 
 # Execute within the Proxmox shell
-# bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/hw-acceleration.sh)"
+# bash -c "$(wget -qLO - https://github.com/DarkEngineer/Proxmox/raw/main/misc/hw-acceleration.sh)"
 
 set -e
 function header_info {
