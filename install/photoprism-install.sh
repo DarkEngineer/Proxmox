@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2024 tteck
-# Author: tteck (tteckster)
+
+
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
 color
@@ -43,7 +43,7 @@ fi
 ldconfig
 cat <<EOF >/opt/photoprism/config/.env
 PHOTOPRISM_AUTH_MODE='password'
-PHOTOPRISM_ADMIN_PASSWORD='helper-scripts.com'
+PHOTOPRISM_ADMIN_PASSWORD='defaultpassword'
 PHOTOPRISM_HTTP_HOST='0.0.0.0'
 PHOTOPRISM_HTTP_PORT='2342'
 PHOTOPRISM_SITE_CAPTION='https://tteck.github.io/Proxmox/'

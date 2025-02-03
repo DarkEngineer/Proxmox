@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
-# Copyright (c) 2021-2024 tteck
-# Author: tteck (tteckster)
+source <(curl -s https://raw.githubusercontent.com/DarkEngineer/Proxmox/main/misc/build.func)
+
+
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 
 function header_info {
   clear
@@ -121,7 +121,7 @@ function update_script() {
     else
       filebrowser config init -a '0.0.0.0' &>/dev/null
       filebrowser config set -a '0.0.0.0' &>/dev/null
-      filebrowser users add admin helper-scripts.com --perm.admin &>/dev/null
+      filebrowser users add admin --perm.admin &>/dev/null
     fi
     msg_ok "Installed FileBrowser"
 
@@ -142,7 +142,7 @@ WantedBy=default.target" >$service_path
 
     msg_ok "Completed Successfully!\n"
     echo -e "FileBrowser should be reachable by going to the following URL.
-         ${BL}http://$IP:8080${CL}   admin|helper-scripts.com\n"
+         ${BL}http://$IP:8080${CL}   admin\n"
     exit
   fi
 }

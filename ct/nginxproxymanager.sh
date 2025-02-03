@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
-# Copyright (c) 2021-2024 tteck
-# Author: tteck (tteckster)
+source <(curl -s https://raw.githubusercontent.com/DarkEngineer/Proxmox/main/misc/build.func)
+
+
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 
 function header_info {
   clear
@@ -95,8 +95,8 @@ function update_script() {
   ln -sf /usr/local/openresty/nginx/ /etc/nginx
   sed -i "s|\"version\": \"0.0.0\"|\"version\": \"$RELEASE\"|" backend/package.json
   sed -i "s|\"version\": \"0.0.0\"|\"version\": \"$RELEASE\"|" frontend/package.json
-  sed -i 's|"fork-me": ".*"|"fork-me": "Proxmox VE Helper-Scripts"|' frontend/js/i18n/messages.json
-  sed -i "s|https://github.com.*source=nginx-proxy-manager|https://helper-scripts.com|g" frontend/js/app/ui/footer/main.ejs
+  sed -i 's|"fork-me": ".*"|"fork-me": "DarkEngineer Scripts"|' frontend/js/i18n/messages.json
+  sed -i "s|https://github.com.*source=nginx-proxy-manager|https://www.dark-eternity.pl|g" frontend/js/app/ui/footer/main.ejs
   sed -i 's+^daemon+#daemon+g' docker/rootfs/etc/nginx/nginx.conf
   NGINX_CONFS=$(find "$(pwd)" -type f -name "*.conf")
   for NGINX_CONF in $NGINX_CONFS; do

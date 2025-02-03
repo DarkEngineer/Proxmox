@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2024 tteck
-# Author: tteck
+
+
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
 color
@@ -72,10 +72,10 @@ expect "Email address"
 send "\r"
 
 expect "Password"
-send "helper-scripts.com\r"
+send "password\r"
 
 expect "Password (again)"
-send "helper-scripts.com\r"
+send "password\r"
 
 expect eof
 EOF

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2024 tteck
-# Author: tteck
-# Co-Author: MickLesk (Canbiz)
+
+
+
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 # Source: https://github.com/diced/zipline
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"

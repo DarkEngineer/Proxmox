@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2024 tteck
-# Author: tteck (tteckster)
+
+
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 
 function header_info {
   clear
@@ -410,12 +410,8 @@ qm set $VMID \
   -scsi0 ${DISK1_REF},${DISK_CACHE}${THIN}size=2G \
   -boot order=scsi0 \
   -serial0 socket \
-  -description "<div align='center'><a href='https://Helper-Scripts.com'><img src='https://raw.githubusercontent.com/tteck/Proxmox/main/misc/images/logo-81x112.png'/></a>
-
   # Debian 12 VM
-
-  <a href='https://ko-fi.com/D1D7EP4GF'><img src='https://img.shields.io/badge/&#x2615;-Buy me a coffee-blue' /></a>
-  </div>" >/dev/null
+</div>" >/dev/null
 msg_ok "Created a Debian 12 VM ${CL}${BL}(${HN})"
 if [ "$START_VM" == "yes" ]; then
   msg_info "Starting Debian 12 VM"

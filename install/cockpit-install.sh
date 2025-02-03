@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2024 tteck
-# Author: tteck
+
+
 # Co-Author: havardthom
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 # Source: https://github.com/cockpit-project/cockpit
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
