@@ -425,4 +425,3 @@ if [ "$START_VM" == "yes" ]; then
 fi
 msg_ok "Completed Successfully!\n"
 echo -e "Setup Cloud-Init before starting \n
-More info at https://github.com/tteck/Proxmox/discussions/2072 \n"
