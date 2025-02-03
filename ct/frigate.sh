@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source <(curl -s https://raw.githubusercontent.com/DarkEngineer/Proxmox/main/misc/build.func)
 
-# Authors: tteck (tteckster)
+
 # License: MIT
 
 
